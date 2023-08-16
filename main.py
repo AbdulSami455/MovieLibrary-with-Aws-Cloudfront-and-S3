@@ -8,5 +8,5 @@ def helloworld():
 
 @app.route("/movie1")
 def movie1():
- return {"Message":"Hello Everyone "}
+ return render_template('movie1.html')
 app.run()
