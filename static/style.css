@@ -1,22 +1,39 @@
-/* Basic styles for the header */
-header {
+/* Basic styles for the top bar */
+.top-bar {
     background-color: #333;
-    color: #fff;
     padding: 10px 0;
+    text-align: center;
 }
 
-/* Styles for the logo */
 .logo {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Basic styles for the image frame */
+.image-frame {
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-left: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
 }
 
-.logo img {
-    margin-right: 10px;
+/* Styles for the clickable images */
+.image-frame a {
+    text-decoration: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.2s;
 }
 
-.app-name {
-    font-size: 24px;
-    font-weight: bold;
+.image-frame a:hover {
+    transform: scale(1.1);
+}
+
+.image-frame img {
+    max-width: 100%;
+    height: auto;
 }

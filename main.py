@@ -6,4 +6,7 @@ app=Flask(__name__)
 def helloworld():
  return render_template('index.html')
 
+@app.route("/movie1")
+def movie1():
+ return {"Message":"Hello Everyone "}
 app.run()
