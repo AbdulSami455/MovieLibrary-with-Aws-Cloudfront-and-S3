@@ -8,5 +8,6 @@ def helloworld():
 
 @app.route("/movie1")
 def movie1():
- return render_template('movie1.html')
+ moviename="name"
+ return render_template('movie1.html',name=moviename)
 app.run()
