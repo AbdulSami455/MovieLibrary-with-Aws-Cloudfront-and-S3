@@ -1,22 +1,10 @@
-/* Basic styles for the top bar */
-.top-bar {
-    background-color: #333;
-    padding: 10px 0;
-    text-align: center;
-}
-
-.logo {
-    max-width: 100px;
-    height: auto;
-}
-
 /* Basic styles for the image frame */
 .image-frame {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 120px;
     padding: 20px;
 }
 
@@ -27,6 +15,12 @@
     border-radius: 5px;
     overflow: hidden;
     transition: transform 0.2s;
+    /* Set fixed width and height for the clickable frames */
+    width: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-frame a:hover {
@@ -35,5 +29,5 @@
 
 .image-frame img {
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
 }
