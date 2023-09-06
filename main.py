@@ -10,4 +10,4 @@ def helloworld():
 def movie1():
  moviename="Inception"
  return render_template('movie1.html',name=moviename)
-app.run()
+app.run(port=6000)
